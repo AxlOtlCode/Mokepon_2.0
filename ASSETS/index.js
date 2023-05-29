@@ -31,6 +31,10 @@ let GatoEnemigo
 let VidasJugador = 10
 let VidasEnemigo = 10
 
+let opcGatetes
+
+let ContTarj = document.getElementById('ContTarj')
+
 // Clases
 
 class Gatete{
@@ -73,6 +77,19 @@ function inicarJuego(){
     sectionSeleccionarMascota.style.display = 'none'
 
     sectionReiniciar.style.display = 'none'
+
+
+    Gatetes.forEach((Gatete) => {
+        opcGatetes = `
+        <label class="LabelButon" for=${Gatete.nombre}> ${Gatete.nombre}
+            <input class="InputSelect" type="radio" id=${Gatete.nombre} name="Gato">
+            <div class="imgGato"><img src=${Gatete.foto} alt=${Gatete.nombre}></div>
+        </label>`
+
+    ContTarj.innerHTML += opcGatetes
+    })
+
+    
 
     botonTitulo.addEventListener('click',PantallaTitulo)
 
