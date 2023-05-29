@@ -81,7 +81,7 @@ function inicarJuego(){
 
     Gatetes.forEach((Gatete) => {
         opcGatetes = `
-        <label class="LabelButon" for=${Gatete.nombre}> ${Gatete.nombre}
+        <label class="LabelButon" for=${Gatete.nombre}>
             <input class="InputSelect" type="radio" id=${Gatete.nombre} name="Gato">
             <div class="imgGato"><img src=${Gatete.foto} alt=${Gatete.nombre}></div>
         </label>`
