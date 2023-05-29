@@ -8,12 +8,6 @@ const botonDinero = document.getElementById('boton-dinero')
 const botonbaile = document.getElementById('boton-baile')
 const botonReinicio = document.getElementById('reset')
 const sectionPantallaInicio = document.getElementById('Titulo')
-
-
-const inputMaxwell = document.getElementById('maxwell')
-const inputFloppa = document.getElementById('floppa')
-const inputMiguel = document.getElementById('miguel')
-
 const SpanGatoJugador = document.getElementById('GatoJugador')
 const SpanGatoEnemigo = document.getElementById('GatoEnemigo')
 
@@ -28,6 +22,10 @@ let GatoJugador
 let GatoEnemigo
 let VidasJugador = 10
 let VidasEnemigo = 10
+
+let inputMaxwell
+let inputMiguel
+let inputFloppa
 
 let opcGatetes
 
@@ -86,6 +84,11 @@ function inicarJuego(){
         </label>`
 
     ContTarj.innerHTML += opcGatetes
+
+    inputMaxwell = document.getElementById('maxwell')
+    inputFloppa = document.getElementById('floppa')
+    inputMiguel = document.getElementById('miguel')
+
     })
 
     
