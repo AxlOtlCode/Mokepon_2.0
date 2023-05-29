@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MichiJuego</title>
+    <link rel="stylesheet" href="ASSETS/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="IMAGES/icons8-tetris-game-console-64.png">
+</head>
+
+
+<body>
+            <div class="Screen">
+
+                <div id="Titulo" class="pantallaTitulo">
+                    <h1>ReFinal MichiGatos FantaMix:</h1><hr><h2>Haunted Castle Revisited</h2><h2 class="NumeroTitulo">X4</h2>
+                    <button id="iniciar" class="BotonInicio">Iniciar partida</button>
+                </div>
+                
+                <!--Pantalla seleccion-->
+                <div id="elige-gato" class="PantallaSeleccion">
+                    <h2>- ELIGE TU -<br>- GATO GUERRERO -</h2>
+                    
+                    <div>
+                        <label class="LabelButon" for="maxwell">MAXWELL
+                            <input class="InputSelect" type="radio" id="maxwell" name="Gato">
+                            <div class="imgGato"><img src="IMAGES/maxwell-cat.gif" alt=""></div>
+                        </label>
+
+                        <label class="LabelButon" for="floppa">FLOPPA
+                            <input class="InputSelect" type="radio" id="floppa" name="Gato">
+                            <div class="imgGato"><img src="IMAGES/Floppa.png" alt=""></div>
+                        </label>
+                        
+                        <label class="LabelButon" for="miguel">MIGUEL
+                            <input class="InputSelect" type="radio" id="miguel" name="Gato">
+                            <div class="imgGato"><img src="IMAGES/Michael.png" alt=""></div>
+                        </label>
+                    </div>
+
+            
+
+                    <button id="botonGato" class="Botonseleccionar">Seleccionar</button>
+                </div>
+
+                <div id="elige-ataque" class="pantallaAtaque">
+                    <h2>ELIGE TU ATAQUE: </h2>
+
+                    <div class="TuGato">
+                        <b>TU GATO:</b><span id="GatoJugador"></span>
+                        <span><span id="VidasJugador">10</span>/10</span>
+                    </div>
+
+                    <div class="SuGato">
+                        <b>GATO ENEMIGO: </b><span id="GatoEnemigo"></span>
+                        <span><span id="VidasEnemigo">10</span>/10</span>
+                    </div>
+
+                    <div class="Ataques">
+                        <button class="BotonAtaques" id="boton-machete">Machete oxidado</button>
+                        <button class="BotonAtaques" id="boton-dinero">Dinero</button>
+                        <button class="BotonAtaques" id="boton-baile">Baile</button>
+                    </div>
+                </div>
+
+                <div id="mensajes">
+                    <p></p>
+                </div>
+
+                <button id="reset">Reiniciar</button>
+                
+
+                
+                <script src="ASSETS/index.js"></script>
+            </div>
+
+</body>
+</html>
