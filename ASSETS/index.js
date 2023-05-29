@@ -20,8 +20,6 @@ const SpanGatoEnemigo = document.getElementById('GatoEnemigo')
 const spanVideasJugador = document.getElementById('VidasJugador')
 const spanVideasEnemigo = document.getElementById('VidasEnemigo')
 
-let parrafo = document.createElement('p')
-
 let Gatetes = []
 
 let ataqueJugador
@@ -70,6 +68,7 @@ miguel.ataques.push(
     {nombre: 'baile', id: 'boton-baile'},
 )
 
+Gatetes.push(maxwell,floppa,miguel)
 
 function inicarJuego(){
     sectionSeleccionarAtaque.style.display = 'none'
@@ -81,7 +80,7 @@ function inicarJuego(){
 
     Gatetes.forEach((Gatete) => {
         opcGatetes = `
-        <label class="LabelButon" for=${Gatete.nombre}>
+        <label class="LabelButon" for=${Gatete.nombre}>${Gatete.nombre}
             <input class="InputSelect" type="radio" id=${Gatete.nombre} name="Gato">
             <div class="imgGato"><img src=${Gatete.foto} alt=${Gatete.nombre}></div>
         </label>`
